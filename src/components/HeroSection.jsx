@@ -9,7 +9,7 @@ function HeroSection() {
         <div className='md:flex items-center gap-5 min-h-[80vh]'>
             <div className='flex flex-col gap-3  '>
                 <h1 className=' flex text-3xl md:text-5xl my-5 mt-10 font-bold '>Hii I am<span className="text-blue-700">&nbsp;Ankit, </span></h1>
-                <h1 className=' flex text-3xl md:text-3xl my-3 font-bold'> I am a&nbsp;<span className=' text-blue-700'>
+                <h1 className=' flex text-xl md:text-3xl my-3 font-bold'> I am a&nbsp;<span className=' text-blue-700'>
                     <Typewriter
                         options={{
                             strings: [' Web Designer', 'Graphic Designer', 'Video Editor', 'Motion Graphic Artist'],

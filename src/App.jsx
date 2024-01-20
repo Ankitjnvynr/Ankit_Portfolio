@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <div className='max-w-[1300px] w-[95%] m-auto bg-white my-4 rounded-xl overflow-hidden p-2 px-10'>
+      <div className='max-w-[1300px] w-[95%] m-auto bg-white my-4 rounded-xl overflow-hidden p-1 px-3 md:px-10'>
         <Navbar />
         <HeroSection />
         <AboutSection/>
