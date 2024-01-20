@@ -6,6 +6,7 @@ import AboutSection from './components/AboutSection'
 
 function App() {
   const [count, setCount] = useState(0)
+  
 
   return (
     <>
