@@ -19,8 +19,8 @@ function HeroSection() {
                     />
                 </span>
                 </h1>
-                <p className='text-justify leading-6 text-lg' >Welcome to my digital playground! I'm  <span className=' font-bold'> Ankit</span>, a passionate web and graphic designer, as well as a skilled video editor and motion graphics enthusiast. With a keen eye for aesthetics and a love for storytelling, I bring ideas to life in the digital realm.</p>
-                <div className='h-44 border flex flex-col  justify-center  gap-7'>
+                <p className='text-justify leading-6 text-lg text-slate-600 ' >Welcome to my digital playground! I'm  <span className=' font-bold'> Ankit</span>, a passionate web and graphic designer, as well as a skilled video editor and motion graphics enthusiast. With a keen eye for aesthetics and a love for storytelling, I bring ideas to life in the digital realm.</p>
+                <div className='h-44  flex flex-col  justify-center  gap-7'>
                     <div className='flex items-center  gap-3'>
                         <a className='bg-blue-700 hover:bg-blue-800 transition-all text-white p-3 rounded-3xl px-6' href="#">My Resume</a>
                         <a className='border-blue-700 hover:bg-blue-100 border-2 text-blue-700 font-bold p-3 rounded-3xl px-6' href="#">My Work</a>
