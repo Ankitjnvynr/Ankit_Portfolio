@@ -1,6 +1,7 @@
 *{
   font-family: "Fira Sans", sans-serif;
   cursor: url('/public/cursor.png'), auto;
+  box-sizing: border-box;
   
 }
 body{

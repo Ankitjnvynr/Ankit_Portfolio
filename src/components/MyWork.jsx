@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import SocialMediaPost from "./workItems/SocialMediaPost";
 import OutLinedButton from "./button/OutLinedButton";
+import MotionGraphicsReel from "./workItems/MotionGraphicsReel";
 
 function MyWork() {
   const [noMorePost, setNoMorePost] = useState(false);
@@ -23,14 +24,22 @@ function MyWork() {
       alt: "MARS Medical and Radiology Services doctor navrati",
     },
     image5: {
-      
       src: "/images/Bs heart care  doctor services.jpg",
       alt: "Bs heart care  doctor services",
     },
     image6: {
-        src: "/images/kichri utsav gieo gita.jpg",
-      alt: "GIEO Gita Kichri utsav",
+      src: "/images/GIEO Gita courses.jpg",
+      alt: "GIEO Gita courses",
     },
+  };
+
+  const MotionGraphicsReels = {
+    vid1: "/videos/Gita jeevan geet motion graphics.mp4",
+    vid2: "/videos/Gita jeevan geet motion graphics.mp4",
+    vid3: "/videos/Gita jeevan geet motion graphics.mp4",
+    vid4: "/videos/Gita jeevan geet motion graphics.mp4",
+    vid5: "/videos/Gita jeevan geet motion graphics.mp4",
+    vid6: "/videos/Gita jeevan geet motion graphics.mp4",
   };
 
   return (
@@ -40,36 +49,56 @@ function MyWork() {
         {" "}
         My Creativity
       </h1>
-      <h2 className="text-2xl">Graphic Designs:- </h2>
-      <p className="text-xl text-slate-600 text-justify">
-        Mostly for the Graphic Designing I&apos;m mostly using Adobe Photoshop.
-        And also I can use Canva for designing.
-      </p>
-      <div className="flex flex-wrap gap-2 my-3 justify-between">
-        {Object.entries(SocialMediaPosts).map(([key, image], index) => {
-          if (index > 5) return;
-          return (
-            <SocialMediaPost
-              className="w-[10%] border-4  md:w-1/3"
-              key={key}
-              src={image.src}
-              alt={image.alt}
-            />
-          );
-        })}
+      <div>
+        <h2 className="text-2xl">Graphic Designs:- </h2>
+        <p className="text-xl text-slate-600 text-justify">
+          Mostly for the Graphic Designing I&apos;m mostly using Adobe
+          Photoshop. And also I can use Canva for designing.
+        </p>
+        <div className="flex flex-wrap gap-2 my-3 justify-between">
+          {Object.entries(SocialMediaPosts).map(([key, image], index) => {
+            if (index > 5) return;
+            return (
+              <SocialMediaPost
+                className="w-[10%] border-4  md:w-1/3"
+                key={key}
+                src={image.src}
+                alt={image.alt}
+              />
+            );
+          })}
+        </div>
+        <div className="text-center py-2 mt-2 mb-3 ">
+          <span
+            onClick={() => {
+              setNoMorePost(true);
+            }}
+          >
+            <OutLinedButton name={noMorePost ? "No More Data" : "View More"} />
+          </span>
+        </div>
       </div>
-      <div className="text-center py-2 mt-2 mb-3 ">
-        <span
-          onClick={() => {
-            setNoMorePost(true);
-          }}
-          
-        >
-          <OutLinedButton
-            
-            name={noMorePost ? "No More Data" : "View More"}
-          />
-        </span>
+      <div>
+        <h2 className="text-2xl">Motion Graphics:- </h2>
+        <p className="text-xl text-slate-600 text-justify">
+          To creating Motion Graphics or animations, I mostly use Adobe After
+          Effact.
+        </p>
+        <div className="flex flex-wrap gap-2 my-3 justify-between">
+          {Object.entries(MotionGraphicsReels).map(([key, src], index) => {
+            if (index > 3) return;
+            return <MotionGraphicsReel key={key} src={src} />;
+          })}
+        </div>
+        <div className="text-center py-2 mt-2 mb-3 ">
+          <span
+            onClick={() => {
+              setNoMorePost(true);
+            }}
+          >
+            <OutLinedButton name={noMorePost ? "No More Data" : "View More"} />
+          </span>
+        </div>
       </div>
     </>
   );
