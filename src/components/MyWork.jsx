@@ -1,18 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import SocialMediaPost from "./workItems/SocialMediaPost";
+import OutLinedButton from "./button/OutLinedButton";
 
 function MyWork() {
+  const [noMorePost, setNoMorePost] = useState(false);
+
   const SocialMediaPosts = {
     image1: {
       src: "/images/kichri utsav gieo gita.jpg",
       alt: "GIEO Gita Kichri utsav",
     },
     image2: {
-      src: "/images/kichri utsav gieo gita.jpg",
-      alt: "GIEO Gita Kichri utsav",
+      src: "images/Genesis Classes Pvt Ltd.jpg",
+      alt: "Abhijay Genesis Classes Pvt Ltd",
     },
     image3: {
-      src: "/images/kichri utsav gieo gita.jpg",
+      src: "/images/Genesis Classes Pvt Ltd TSE.jpg",
+      alt: "Genesis Classes Pvt Ltd TSE Exam",
+    },
+    image4: {
+      src: "/images/Mars Karnal.jpg",
+      alt: "MARS Medical and Radiology Services doctor navrati",
+    },
+    image5: {
+      
+      src: "/images/Bs heart care  doctor services.jpg",
+      alt: "Bs heart care  doctor services",
+    },
+    image6: {
+        src: "/images/kichri utsav gieo gita.jpg",
       alt: "GIEO Gita Kichri utsav",
     },
   };
@@ -22,17 +38,38 @@ function MyWork() {
       {/* Graphic designing */}
       <h1 className="text-center text-3xl font-bold mt-6 mb-2 text-blue-700 ">
         {" "}
-        My Creativivty
+        My Creativity
       </h1>
       <h2 className="text-2xl">Graphic Designs:- </h2>
       <p className="text-xl text-slate-600 text-justify">
         Mostly for the Graphic Designing I&apos;m mostly using Adobe Photoshop.
         And also I can use Canva for designing.
       </p>
-      <div className="flex flex-wrap gap-2 my-3">
-      {Object.entries(SocialMediaPosts).map(([key, image]) => {
-        return <SocialMediaPost className='w-[10%] border-4  md:w-1/3' key={key} src={image.src} alt={image.alt} />;
-      })}
+      <div className="flex flex-wrap gap-2 my-3 justify-between">
+        {Object.entries(SocialMediaPosts).map(([key, image], index) => {
+          if (index > 5) return;
+          return (
+            <SocialMediaPost
+              className="w-[10%] border-4  md:w-1/3"
+              key={key}
+              src={image.src}
+              alt={image.alt}
+            />
+          );
+        })}
+      </div>
+      <div className="text-center py-2 mt-2 mb-3 ">
+        <span
+          onClick={() => {
+            setNoMorePost(true);
+          }}
+          
+        >
+          <OutLinedButton
+            
+            name={noMorePost ? "No More Data" : "View More"}
+          />
+        </span>
       </div>
     </>
   );
