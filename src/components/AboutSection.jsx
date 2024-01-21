@@ -7,7 +7,7 @@ function AboutSection() {
             <div className='flex-col  md:w-[50%] items-center justify-center'>
                 <img className='w-[100%]' src="/images/about_section.png" alt="" />
             </div>
-            <div className='flex flex-col md:items-start  justify-center items-center  md:w-[50%] p-2'>
+            <div className='flex flex-col md:items-start  justify-center items-center  md:w-[50%] '>
                 <h1 className='text-4xl my-4 font-bold text-blue-800 border-bottom'>About Me</h1>
                 <p className='text-xl text-slate-600 text-justify'>
                     I am Ankit,<br></br>

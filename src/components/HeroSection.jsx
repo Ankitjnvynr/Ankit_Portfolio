@@ -24,7 +24,7 @@ function HeroSection() {
                 <p className='text-justify leading-6 text-lg text-slate-600 ' >Welcome to my digital playground! I'm  <span className=' font-bold'> Ankit</span>, a passionate web and graphic designer, as well as a skilled video editor and motion graphics enthusiast. With a keen eye for aesthetics and a love for storytelling, I bring ideas to life in the digital realm.</p>
                 <div className='h-44  flex flex-col  justify-center  gap-7'>
                     <div className='flex items-center justify-center md:justify-start  gap-3'>
-                        <Button name={"My Resume  "} link={"#"} />
+                        <Button name={"My Resume"} link={"#"} />
                         <OutLinedButton name={"My work"} link={"#"} />
                     </div>
                     <div className='flex gap-4 justify-center md:justify-start'>

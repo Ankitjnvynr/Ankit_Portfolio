@@ -1,5 +1,7 @@
 *{
   font-family: "Fira Sans", sans-serif;
+  cursor: url('/public/cursor.png'), auto;
+  
 }
 body{
   background-color: rgb(0, 26, 142);
