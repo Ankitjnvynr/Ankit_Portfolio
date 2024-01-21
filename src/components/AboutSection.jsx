@@ -1,4 +1,5 @@
 import React from 'react'
+import Button from './button/Button'
 
 function AboutSection() {
     return (
@@ -15,7 +16,7 @@ function AboutSection() {
                      A versatile creative professional. My journey in the digital realm began with a fascination for design, which has now evolved into a passion for crafting visually stunning and user-centric experiences.
                 </p>
                 <div className='flex items-center  gap-3 my-5'>
-                    <a className='bg-blue-700 hover:bg-blue-800 transition-all text-white p-3 rounded-3xl px-6' href="#">Hire Me</a>
+                    <Button name={"Hire Me"} link={"#"}/>
                 </div>
             </div>
         </div>
