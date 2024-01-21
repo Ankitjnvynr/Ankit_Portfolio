@@ -20,7 +20,7 @@ function Navbar() {
             Object.entries(menus).map(menu => {
               let link = menu[1];
               let name = menu[0];
-              return <li key={name} className=' cursor-pointer hover:text-black hover:bg-blue-100 p-2 px-3 rounded-lg hover:-translate-y-[2px]  transition-all'><a href={link}>{name}</a></li>
+              return <li key={link} className=' cursor-pointer hover:text-black hover:bg-blue-100 p-1 md:p-2 md:px-3 rounded-lg hover:-translate-y-[2px]  transition-all'><a href={link}>{name}</a></li>
               
             })
           }
