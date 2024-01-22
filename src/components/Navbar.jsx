@@ -14,7 +14,7 @@ function Navbar() {
   return (
     <>
       <section className='h-20  flex items-center justify-between border-b mb-2'>
-        <div className="logo w-[50px]"><img className='w-[100%]' src="../pic.png" alt="logo" /></div>
+        <div className="logo cursor-pointer w-[50px]"><img className='cursor-pointer w-[100%]' src="../pic.png" alt="logo" /></div>
         <ul className='flex text-3 gap-1   text-blue-700  font-semibold '>
           {
             Object.entries(menus).map(menu => {

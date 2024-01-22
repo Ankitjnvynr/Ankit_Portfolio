@@ -8,3 +8,10 @@ body{
   background-color: rgb(0, 26, 142);
   /* color: rgba(0, 238, 255, 0.656); */
 }
+.progress{
+  animation: prog 20s ease-out ;
+}
+@keyframes prog {
+  from{width: 10%;}
+  to {width: 15%;}
+}

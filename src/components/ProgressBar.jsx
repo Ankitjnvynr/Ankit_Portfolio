@@ -7,7 +7,7 @@ function ProgressBar() {
   let year = dob.getFullYear();
 
   const now = new Date();
-  console.log(now);
+  
   let yearDiff = now.getFullYear() - year;
   let monthDiff = now.getMonth() - month;
   let dateDiff = now.getDate() - day;
@@ -28,6 +28,7 @@ function ProgressBar() {
     monthDiff -= 1;
   }
 
+
   if (yearDiff < 0) var innerHTML = "Invalid Date";
   else
     var calculatedExperience = yearDiff + (yearDiff>1 ? " years " : " year ") + monthDiff + (monthDiff>1?" months ":" month ") ;
@@ -36,7 +37,7 @@ function ProgressBar() {
   return (
     <>
       <div className="w-[100%] relative h-1 rounded-md  my-4 mb-14 flex border">
-        <div className="w-[15%] h-1 rounded-md bg-blue-700"></div>
+        <div  className="progress w-[15%] h-1 rounded-md bg-blue-700"></div>
         <span class="relative flex h-3 w-3 -translate-x-1 -translate-y-1">
           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-500 opacity-75"></span>
           <span class="relative inline-flex rounded-full h-3 w-3 bg-blue-700 "></span>
