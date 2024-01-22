@@ -45,7 +45,7 @@ function MyWork() {
   return (
     <>
       {/* Graphic designing */}
-      <h1 className="text-center text-3xl font-bold mt-6 mb-2 text-blue-700 ">
+      <h1 id="Mycreativity" className="text-center text-3xl font-bold mt-6 mb-2 text-blue-700 ">
         {" "}
         My Creativity
       </h1>
@@ -82,7 +82,7 @@ function MyWork() {
         <h2 className="text-2xl">Motion Graphics:- </h2>
         <p className="text-xl text-slate-600 text-justify">
           To creating Motion Graphics or animations, I mostly use Adobe After
-          Effact.
+          Effects.
         </p>
         <div className="flex flex-wrap gap-2 my-3 justify-between">
           {Object.entries(MotionGraphicsReels).map(([key, src], index) => {
