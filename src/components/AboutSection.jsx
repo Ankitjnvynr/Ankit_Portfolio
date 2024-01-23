@@ -3,7 +3,7 @@ import Button from './button/Button'
 
 function AboutSection() {
     return (
-        <div className='flex flex-col-reverse md:flex-row items-center gap-1'>
+        <div className='px-5 md:px-20 flex flex-col-reverse md:flex-row items-center gap-1'>
             <div className='flex-col  md:w-[50%] items-center justify-center'>
                 <img className='w-[100%]' src="/images/about_section.png" alt="" />
             </div>

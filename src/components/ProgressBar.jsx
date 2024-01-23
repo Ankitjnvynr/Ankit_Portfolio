@@ -12,7 +12,7 @@ function ProgressBar({ tooltip }) {
             <span className="absolute translate-y-5 -translate-x-8 inline-flex rounded border border-blue-700 px-3 py-1 font-bold text-blue-700 ">
               BigByte
             </span>
-            <span className="absolute translate-y-[14px] bg-white   inline-flex  border-l rotate-45  border-t border-blue-700 h-3 w-3 "></span>
+            <span className="absolute translate-y-[14px] bg-blue-50  inline-flex  border-l rotate-45  border-t border-blue-700 h-3 w-3 "></span>
           </span>
         ) : (
           ""

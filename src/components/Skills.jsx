@@ -15,7 +15,7 @@ import {
 
 function Skills() {
   return (
-    <div className="mt-2 mb-10 md:mb-20">
+    <div className="mt-2 mb-10 md:mb-20 px-5 md:px-20">
       <h1 className="text-center text-3xl font-bold mt-6 mb-2 text-blue-700 ">
         Skills
       </h1>

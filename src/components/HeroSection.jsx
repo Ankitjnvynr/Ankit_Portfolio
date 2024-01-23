@@ -15,7 +15,7 @@ function HeroSection() {
 
 
   return (
-    <div className="md:flex items-center gap-5 min-h-[80vh]">
+    <div  className="bg-gradient-to-b from-transparent from-10% via-red-50 via-30% to-blue-100 py-10 m-0 px-5 md:px-20 mb-15 md:mb-20 rounded-lg md:flex items-center gap-5 min-h-[80vh]">
       <div className="flex flex-col gap-3  ">
         <h1 className=" flex text-3xl md:text-5xl my-5 mt-10 font-bold ">
           Hii I am

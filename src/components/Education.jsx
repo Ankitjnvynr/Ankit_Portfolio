@@ -17,7 +17,7 @@ function Education() {
     },
   };
   return (
-    <>
+    <div className=" bg-blue-50 py-10 m-0 px-5 md:px-20 mb-15 md:mb-20 rounded-lg">
       <h1 className="text-center text-3xl font-bold mt-10 mb-2 text-blue-700  ">
         Education
       </h1>
@@ -39,10 +39,10 @@ function Education() {
           </div>
         </div>
         <div className="w-[100%] md:w-[40%] ">
-          <img className="w-[100%] mix-blend-multiply"  src="public/images/education.png" alt=" education" />
+          <img className="w-[80%] m-auto mix-blend-multiply"  src="public/images/education.png" alt=" education" />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

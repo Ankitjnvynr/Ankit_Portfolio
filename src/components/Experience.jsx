@@ -38,7 +38,7 @@ function Experience() {
       (monthDiff > 1 ? " months " : " month ");
 
   return (
-    <>
+    <div className=" bg-blue-50 py-10 m-0 px-5 md:px-20 mb-15 md:mb-20 rounded-lg">
       <h1 className="text-center text-3xl font-bold mt-6 mb-2  text-blue-700 ">
         Work Experience
       </h1>
@@ -85,7 +85,7 @@ function Experience() {
           <img src="/images/experience.png" alt="" />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

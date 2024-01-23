@@ -43,7 +43,7 @@ function MyWork() {
   };
 
   return (
-    <>
+    < div className="px-5 md:px-20">
       {/* Graphic designing */}
       <h1 id="Mycreativity" className="text-center text-3xl font-bold mt-6 mb-2 text-blue-700 ">
         {" "}
@@ -100,7 +100,7 @@ function MyWork() {
           </span>
         </div>
       </div>
-    </>
+    </ div>
   );
 }
 
