@@ -35,8 +35,8 @@ function MyWork() {
 
   const MotionGraphicsReels = {
     vid1: "/videos/Gita jeevan geet motion graphics.mp4",
-    vid2: "/videos/Gita jeevan geet motion graphics.mp4",
-    vid3: "/videos/Gita jeevan geet motion graphics.mp4",
+    vid2: "/videos/divy gita satsang motion graphics.mp4",
+    vid3: "/videos/divy gita satsang motion graphics video.mp4",
     vid4: "/videos/Gita jeevan geet motion graphics.mp4",
     vid5: "/videos/Gita jeevan geet motion graphics.mp4",
     vid6: "/videos/Gita jeevan geet motion graphics.mp4",
