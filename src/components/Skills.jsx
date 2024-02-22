@@ -11,6 +11,8 @@ import {
   SiPhp,
   SiReact,
 } from "react-icons/si";
+import { FaWordpressSimple } from "react-icons/fa6";
+
 
 
 function Skills() {
@@ -80,6 +82,15 @@ function Skills() {
             JavaScript
             <div className=" relative h-1 rounded-md   flex border">
               <div className=" w-[65%]  h-1 rounded-md bg-blue-700"></div>
+            </div>
+          </div>
+        </div>
+        <div className="flex items-center gap-2 text-2xl font-bold">
+          <FaWordpressSimple  className=" text-cyan-700 text-5xl" />{" "}
+          <div className="w-full my-3">
+            Wordpress
+            <div className=" relative h-1 rounded-md   flex border">
+              <div className=" w-[90%]  h-1 rounded-md bg-blue-700"></div>
             </div>
           </div>
         </div>
