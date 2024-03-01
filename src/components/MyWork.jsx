@@ -8,8 +8,8 @@ function MyWork() {
 
   const SocialMediaPosts = {
     image1: {
-      src: "/images/kichri utsav gieo gita.jpg",
-      alt: "GIEO Gita Kichri utsav",
+      src: "/images/divya gita satsang.jpg",
+      alt: "divya gita satsang",
     },
     image2: {
       src: "images/Genesis Classes Pvt Ltd.jpg",
