@@ -4,7 +4,7 @@ function Navbar() {
   // const _ = require('lodash');
 
   const menus = {
-    "Home": "#",
+    "Home": "/",
     "About": "#",
     "Hire Me": "#",
     "My work": "#",
@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <div className=" px-5 md:px-20 ">
-      <section className='h-20  flex items-center justify-between border-b mb-2'>
+      <section className='h-20 sticky  flex items-center justify-between border-b mb-2 '>
         <div className="logo cursor-pointer w-[50px]"><img className='cursor-pointer w-[100%]' src="../pic.png" alt="logo" /></div>
         <ul className='flex text-3 gap-1   text-blue-700  font-semibold '>
           {
