@@ -8,6 +8,8 @@ import Experience from './components/Experience';
 import Skills from './components/Skills';
 import Education from './components/Education';
 import Social from './components/Social';
+import WebsiteProjects from './components/WebsiteProjects';
+import Footer from './components/Footer';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -23,7 +25,12 @@ function App() {
         <Skills />
         <Education />
         <MyWork />
+        <WebsiteProjects />
       </div>
+      <div className="max-w-[1300px] w-[95%] m-auto text-white  my-4 rounded-xl overflow-hidden ">
+        <Footer />
+      </div>
+      
     </>
   );
 }
