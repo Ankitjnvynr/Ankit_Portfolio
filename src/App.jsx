@@ -1,15 +1,12 @@
 import { useState } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
-import HeroSection from './components/HeroSection';
-import AboutSection from './components/AboutSection';
-import MyWork from './components/MyWork';
-import Experience from './components/Experience';
-import Skills from './components/Skills';
-import Education from './components/Education';
-import Social from './components/Social';
-import WebsiteProjects from './components/WebsiteProjects';
 import Footer from './components/Footer';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './Home';
+import About from './components/About';
+import GrapicDesigns from './GrapicDesigns';
+import MotionGraphics from './MotionGraphics';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -18,19 +15,20 @@ function App() {
     <>
       <div className="max-w-[1300px] w-[95%] m-auto bg-white shadow-lg my-4 rounded-xl overflow-hidden ">
         <Navbar />
-        {/* <Social /> */}
-        <HeroSection />
-        <AboutSection />
-        <Experience />
-        <Skills />
-        <Education />
-        <MyWork />
-        <WebsiteProjects />
+        <Router>
+          <div>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/graphic-designs" element={<GrapicDesigns />} />
+              <Route path="/motion-graphics" element={<MotionGraphics />} />
+            </Routes>
+          </div>
+        </Router>
       </div>
       <div className="max-w-[1300px] w-[95%] m-auto text-white  my-4 rounded-xl overflow-hidden ">
         <Footer />
       </div>
-      
     </>
   );
 }
