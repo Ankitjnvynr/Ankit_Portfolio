@@ -1,5 +1,0 @@
-{
-  "rewrites": [
-    { "source": "/https://ankit-me.vercel.app/(.*)", "destination": "/index.html" }
-  ]
-}
