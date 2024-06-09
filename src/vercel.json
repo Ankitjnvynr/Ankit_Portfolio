@@ -1,5 +1,5 @@
 {
   "rewrites": [
-    { "source": "/index.html(.*)", "destination": "https://github.com/Ankitjnvynr/Ankit_Portfolio.git" }
+    { "source": "/https://ankit-me.vercel.app/(.*)", "destination": "/index.html" }
   ]
 }
