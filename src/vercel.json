@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source":  "/Home.jsx(.*)",
-      "destination": "/index.html"
+      "source":  "/(.*)",
+      "destination": "/"
     }
   ]
 }
