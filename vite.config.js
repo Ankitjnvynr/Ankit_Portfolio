@@ -11,4 +11,7 @@ export default defineConfig({
       external: ['react-router-dom'],
     },
   },
+  alias: {
+    'react-router-dom': 'node_modules/react-router-dom/index',
+  },
 });
