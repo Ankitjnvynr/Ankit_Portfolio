@@ -10,7 +10,7 @@ import GrapicDesigns from './GrapicDesigns';
 import MotionGraphics from './MotionGraphics';
 
 
-
+function App =() => {
   const router = createBrowserRouter([
     {
       path: '/',
@@ -30,7 +30,7 @@ import MotionGraphics from './MotionGraphics';
     },
   ]);
   
-function App =() => {
+
   return (
     <>
       <div className="max-w-[1300px] w-[95%] m-auto bg-white shadow-lg my-4 rounded-xl overflow-hidden ">
