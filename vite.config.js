@@ -7,11 +7,19 @@ export default defineConfig({
     include: ['react-router-dom'],
   },
   build: {
+    outDir: 'dist', // Specify the output directory where the build files will be generated
     rollupOptions: {
-      external: ['react-router-dom'],
+      external: ['react-router-dom'], // Specify dependencies to be treated as external and not bundled
     },
   },
-  alias: {
-    'react-router-dom': 'node_modules/react-router-dom/index',
+  server: {
+    open: true, // Open the browser when running the development server
+  },
+  resolve: {
+    alias: {
+      // Optional: Add alias for specific paths
+      '@': '/src',
+    },
   },
 });
+
