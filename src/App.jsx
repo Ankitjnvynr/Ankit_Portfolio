@@ -9,8 +9,8 @@ import About from './components/About';
 import GrapicDesigns from './GrapicDesigns';
 import MotionGraphics from './MotionGraphics';
 
-function App() {
 
+function App =() => {
   const router = createBrowserRouter([
     {
       path: '/',
