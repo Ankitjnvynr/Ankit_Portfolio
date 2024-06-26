@@ -7,7 +7,7 @@
     }
   ],
   "routes": [
-    { "handle": "App.jsx" },
+    { "handle": "package.json" },
     {
       "src": "/.*",
       "dest": "/index.html"
