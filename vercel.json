@@ -7,7 +7,7 @@
     }
   ],
   "routes": [
-    { "handle": "dist" },
+    { "handle": "App.jsx" },
     {
       "src": "/.*",
       "dest": "/index.html"
